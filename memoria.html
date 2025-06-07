@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ADM</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+</head>
+<body id="top">
+<div class="wrapper">
+  <div id="header">
+    <div id="logo">
+      <h1><a href="index.html">ADM</a></h1>
+      <p>Arquitectura de maquinas - Contenido y material del curso</p>
+    </div>
+    <div id="topnav">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li class="active"><a href="conceptos.html">Conceptos</a></li>
+    <li><a href="estructuras.html">Estructuras</a></li>
+    <li><a href="practicas.html">Practicas</a></li>
+   
+  </ul>
+
+  
+  <h1 style="position: absolute; top: 170px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">Jerarquia</h1>
+  <p style="position: absolute; top: 210px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">La jerarquia de memoria se refiere a la organizacion de los diferentes tipos de memoria en niveles, segun su velocidad, tamano y costo. Desde el nivel mas rapido y costoso hasta el mas lento y barato, la jerarquia es asi:</p>
+<img src="images/demo/jerar.png"style="position: absolute; top: 250px; left: 30px;" alt="" />
+<p style="position: absolute; top: 720px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">Esto es una organizacion en niveles que busca equilibrar velocidad, costo y capacidad. 
+  Las memorias mas rapidas como los registros y la cache se encuentran cerca del procesador y son pequenas y costosas, mientras que memorias mas lentas como la RAM y el disco duro son mas grandes y economicas. Esta estructura permite que el procesador acceda primero a la memoria mas rapida
+   y solo recurra a niveles inferiores si es necesario, mejorando asi el rendimiento del sistema. 
+  Gracias a la jerarquia, se puede lograr un sistema eficiente sin necesidad de usar un solo tipo de memoria para todo.
+<br><br><strong>Por que existe jerarquia en la memoria?</strong><br><br>La jerarquia de memoria existe para equilibrar tres factores fundamentales: la velocidad, el costo y el tamano. En cuanto a la velocidad, el procesador necesita acceder 
+a los datos lo mas rapido posible, por lo que las memorias que se encuentran mas cerca de el, como los registros o la cache, deben ser extremadamente rapidas. Sin embargo, estas memorias son tambien las mas costosas, lo que hace inviable utilizarlas como unica fuente de almacenamiento. Por esa razon, el sistema recurre a memorias de menor costo pero tambien mas lentas,
+ como la RAM o los discos duros. Ademas, existe una relacion directa entre la velocidad y el tamano: cuanto mas rapida es una memoria, menor es su capacidad. 
+Esta es la razon por la cual la jerarquia combina distintos tipos de memoria, permitiendo un sistema eficiente, rapido y economicamente viable.
+</p>
+
+  <h1 style="position: absolute; top: 990px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">Importancia de la memoria</h1>
+
+<p style="position: absolute; top: 1043px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">La memoria es crucial para el rendimiento y funcionalidad del sistema. Sin memoria:<br><br>
+  -El procesador no podria guardar ni recuperar datos para operar.<br><br>
+-No podriamos abrir multiples aplicaciones a la vez.<br><br>-No se podrian ejecutar programas grandes o complejos. <br><br>
+La cantidad y tipo de memoria afecta directamente la velocidad del sistema. Por ejemplo, tener mas RAM permite que el sistema cargue mas programas simultaneamente sin usar el disco duro, lo que reduce el tiempo de espera.
+<br>
+En sistemas embebidos, donde los recursos son limitados, el manejo eficiente de memoria es vital para que el sistema funcione correctamente con el menor consumo de energia posible.</p>
+
+    </div></div></div></body></html>

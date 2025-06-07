@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ADM</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+</head>
+<body id="top">
+<div class="wrapper">
+  <div id="header">
+    <div id="logo">
+      <h1><a href="index.html">ADM</a></h1>
+      <p>Arquitectura de maquinas - Contenido y material del curso</p>
+    </div>
+    <div id="topnav">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="conceptos.html">Conceptos</a></li>
+    <li class="active"><a href="estructuras.html">Estructuras</a></li>
+    <li><a href="practicas.html">Practicas</a></li>
+    
+  </ul>
+
+<h1 style="position: absolute; top: 170px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  color: #FDC609;
+  margin: 0;">Estructuras de computadoras</h1>
+  <p style="position: absolute; top: 210px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;"><strong>A que nos referimos cuando hablamos de estructura de computadoras?</strong><br><br>
+  La estructura de una computadora se refiere al conjunto de componentes fisicos (hardware) y la manera en que se comunican entre si para ejecutar instrucciones y procesar datos. Esta organizacion se basa en el modelo propuesto por <strong>John von Neumann</strong> , que hasta hoy sigue siendo el fundamento de la mayoria de los sistemas informaticos.</p>
+<img src="images/demo/estructura.png"style="position: absolute; top: 310px; left: 30px;" alt="" />
+
+<h1 style="position: absolute; top: 700px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">Cuales son sus componentes?</h1>
+
+<p style="position: absolute; top: 740px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;"><strong>Unidad central de procesamiento (CPU)</strong><br><br>
+  Es el cerebro de la computadora. Se encarga de ejecutar instrucciones y controlar el funcionamiento del resto del sistema. 
+  Dentro de la CPU hay dos partes clave:<br><br><strong>Unidad de Control (UC):</strong>
+  Dirige el flujo de datos entre los demas componentes. Interpreta las instrucciones y las ejecuta.<br><br><strong>Unidad Aritmetico-Logica (ALU):</strong>
+  Realiza operaciones matematicas y logicas.<br><br> <strong>Memoria principal</strong><br><br>Almacena temporalmente datos e instrucciones que la CPU necesita mientras trabaja. El tipo mas comun es la RAM, que es rapida pero volatil (pierde los datos al apagar el sistema).
+  <br><br><strong>Memoria secundaria (almacenamiento)</strong><br><br>Es el lugar donde se guardan los datos de forma permanente o a largo plazo. Ejemplos: discos duros, SSD, unidades USB, etc. Aunque es mas lenta que la memoria RAM, tiene mayor capacidad.<br><br><strong>Buses</strong><br><br>Son canales que permiten la transmision de datos entre los diferentes componentes. Existen tres tipos:
+  <br><br><strong>Bus de datos:</strong>Transporta la informacion.<br><br><strong>Bus de direcciones: </strong> Indica donde se debe enviar o buscar la informacion.<br><br><strong>Bus de control:</strong>Coordina las senales de control entre dispositivos.
+</p>
+
+<h1 style="position: absolute; top: 1220px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">Hablemos sobre el modelo Von Neumann y las bases fundamentales de la arquitectura de computadoras!</h1>
+  <img src="images/demo/jon.png"style="position: absolute; top: 1260px; left: 30px;" alt="" />
+<p style="position: absolute; top: 1580px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">El modelo de Von Neumann fue propuesto por el matematico y cientifico John von Neumann en 1945. Este modelo describe la forma en que una computadora debe estar estructurada para procesar datos e 
+  instrucciones de forma logica y secuencial.</p>
+<h1 style="position: absolute; top: 1630px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">Importancia del modelo</h1>
+
+  <p style="position: absolute; top: 1670px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;"><strong>Estandarizo el diseno de computadoras,</strong>
+haciendo posible la creacion de maquinas universales programables.<br><br>Facilito el desarrollo de<strong>lenguajes de programacion y sistemas operativos</strong>,ya que impuso una logica secuencial y clara.
+<br><br>Su enfoque de almacenar datos e instrucciones en la misma memoria simplifico mucho el hardware de las primeras computadoras.
+</p>
+
+<h1 style="position: absolute; top: 1770px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">Limitaciones</h1>
+  <p style="position: absolute; top: 1815px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;"><strong>Cuello de botella de Von Neumann: </strong>ocurre porque el bus entre la CPU y la memoria es compartido para datos e instrucciones, lo que puede hacer lenta la comunicacion.
+  <br><br><strong>Seguridad:</strong>como las instrucciones son datos, puede ser vulnerable si datos maliciosos se ejecutan como codigo.<br><br><br>El modelo de Von Neumann es fundamental para entender como funcionan las computadoras actuales. A pesar de sus limitaciones, su simplicidad y eficiencia lo han hecho perdurar como base de la mayoria de las arquitecturas modernas.<br><br> </p>
+
+  <h1 style="position: absolute; top: 1975px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  color: #FDC609;
+  margin: 0;">Estructuras de arduinos</h1>
+  <p style="position: absolute; top: 2008px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;"><strong> Estructura basica de un Arduino</strong><br><br>
+  <strong>Microcontrolador (MCU)</strong><br><br>Es el "cerebro" de la placa. Por ejemplo, en el Arduino Uno se usa el ATmega328P. Se encarga de ejecutar el codigo cargado desde la computadora, controlar pines, 
+  gestionar la comunicacion, etc.<br><br><strong>Memoria</strong><br><br><strong>Flash:</strong>donde se guarda el programa cargado.
+<br><strong>SRAM: </strong>memoria de trabajo(variables).<br><strong>EEPROM:</strong>memoria no volatil para guardar datos incluso sin energia.
+<br><br><strong>Pines de entrada/salida (I/O)</strong><br><br><strong>Digitales (0-13):</strong>para encender LEDs, leer botones, activar reles, etc.<br><strong>Analogicos (A0-A5):</strong>
+ para leer sensores que entregan senales variables.
+<br>
+Algunos pines tienen funciones especiales como PWM (modulacion por ancho de pulso).
+<br><br><strong>Regulador de voltaje</strong><br><br>Convierte la energia de entrada (por ejemplo, 9V desde un adaptador) a 5V o 3.3V necesarios para el funcionamiento del microcontrolador.
+<br><br><strong>Puerto USB</strong><br><br>Se utiliza para cargar el programa desde la computadora y tambien para comunicacion serial con el PC (monitor serial).
+<br><br><strong>Cristal oscilador</strong><br><br>Establece la frecuencia de trabajo del microcontrolador (por ejemplo, 16 MHz en el Uno).<br><br><strong>Conectores de alimentacion</strong><br><br>Permiten alimentar el Arduino desde fuentes externas (baterias, adaptadores, etc.).
+<br><br><strong>LEDs integrados</strong><br><br>Indicadores basicos de encendido y el pin digital 13 que generalmente se usa como prueba inicial (blink).
+</p>
+
+<img src="images/demo/Estardui.png"style="position: absolute; top: 2650px; left: 30px;" alt="" />
+
+
+  <h1 style="position: absolute; top: 2930px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  
+  margin: 0;">Por que es importante conocer la estructura de un arduino?</h1>
+
+   <p style="position: absolute; top: 2970px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">Conocer la estructura de un Arduino es importante porque te permite entender 
+  como funciona y como interactuar con el hardware de manera eficiente. Saber para que sirve cada parte de la placa (como el microcontrolador, los pines digitales y analogicos, el regulador de voltaje, o el puerto USB) te ayuda a conectar sensores, motores, pantallas y otros componentes correctamente. Tambien te permite identificar errores y resolver problemas, 
+  ademas de aprovechar al maximo las capacidades del dispositivo al programarlo.<br><br>Arduino se puede ocupar para una gran variedad de proyectos practicos y educativos. Se utiliza para automatizar tareas en el hogar, como encender luces con sensores de movimiento o controlar la temperatura de una habitacion. Tambien permite leer datos de sensores como temperatura, humedad, gas, luz o ultrasonido, 
+  y actuar segun esos datos. Es muy util para controlar motores, servos o mecanismos en robots, puertas automaticas o vehiculos. Ademas, se puede usar para crear sistemas de alarma o seguridad con sensores y notificaciones. Es ideal para hacer prototipos rapidos o proyectos escolares, ya que permite controlar entradas y salidas fisicas facilmente. Arduino tambien puede comunicarse con modulos externos como Bluetooth, WiFi o pantallas, lo que lo hace perfecto para sistemas domoticos, 
+  estaciones meteorologicas o monitoreo remoto. Por su versatilidad y facilidad de uso, es muy usado en educacion, carreras tecnicas e 
+  ingenieria, asi como por hobistas y desarrolladores.<br><br></p>
+
+  <h1 style="position: absolute; top: 3190px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  color: #FDC609;
+  margin: 0;">Estructura del sistema de almacenamiento</h1>
+<img src="images/demo/memo.png"style="position: absolute; top: 3230px; left: 30px;" alt="" />
+  <p style="position: absolute; top: 3500px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;"><strong>Que es el sistema de almacenamiento?</strong><br><br>
+  Es el conjunto de componentes fisicos y logicos encargados de guardar datos, preservar informacion y permitir el acceso eficiente a estos datos cuando se necesitan. A diferencia de la memoria RAM o la cache, que son volatiles y temporales, 
+  el almacenamiento esta diseñado para mantener la informacion de forma permanente o persistente.<br><br>
+<strong>Tipos de niveles de almacenamiento</strong>El almacenamiento se organiza en diferentes niveles jerarquicos, cada uno con caracteristicas distintas:<br><br>
+<strong>1.Almacenamiento primario</strong><br><br> Incluye memorias como: <br><br><strong>RAM:</strong> de acceso rapido, volatil, se usa mientras se ejecutan los programas.<br><br><strong>Cache:</strong> aun mas rapida, situada entre el CPU y la RAM, sirve para acelerar el acceso a datos frecuentes.
+<br><br><strong>Registros:</strong> dentro del CPU, extremadamente rapidos y muy pequeños.<br><br> Este nivel no retiene los datos una vez apagado el sistema.<br><br>
+<strong>2.Almacenamiento secundario</strong><br><br> Incluye dispositivos que almacenan datos de forma permanente: <br><br>
+<strong>Discos duros (HDD):</strong>baratos y con gran capacidad, pero mas lentos.
+<strong>Unidades de estado solido (SSD):</strong>mas rapidas y resistentes, pero mas caras por GB.<br><br>
+<strong>Unidades opticas (CD/DVD):</strong> usadas menos hoy, pero sirven para distribucion de contenido.
+<br><br><strong>Memorias flash(USB,SD):</strong>portatiles y practicas para transporte de archivos.<br><br>
+
+Este nivel es persistente, y es el principal medio para guardar el sistema operativo, aplicaciones y archivos del usuario.<br><br>
+<strong>3.Almacenamiento terciario o masivo</strong><br><br>
+Usado para copias de seguridad, archivos antiguos o almacenamiento en gran escala:
+<br><br>
+Cintas magneticas (en centros de datos)<br>Almacenamiento en la nube (servidores remotos)<br><br>
+Este tipo de almacenamiento es mas lento pero economico para grandes cantidades de datos.
+</p>
+<img src="images/demo/memr.png"style="position: absolute; top: 4190px; left: 30px;" alt="" />
+  <h1 style="position: absolute; top: 4450px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  
+  margin: 0;">Sistema de archivos</h1>
+  <p style="position: absolute; top: 4500px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">Es la estructura logica que organiza los datos dentro de los dispositivos de almacenamiento. Algunos ejemplos de sistemas de archivos son:
+  <br><br><strong>-FAT32, exFAT, NTFS</strong>(Windows)<br><br><strong>-ext4</strong>(Linux)<br><br><strong>-APFS,HFS+</strong>(macOS)<br><br>
+  
+</p>
+
+<img src="images/demo/archivo.png"style="position: absolute; top: 4597px; left: 30px;" alt="" />
+
+<p style="position: absolute; top: 4840px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">Permiten dividir el almacenamiento en carpetas, asignar nombres a archivos, gestionar permisos, controlar el uso de espacio, entre otras funciones. Sin un sistema de archivos, no se podria acceder 
+  de manera ordenada a la informacion almacenada.</p>
+
+  <h1 style="position: absolute; top: 4900px; left: 30px;
+  width: 1000px;
+  text-align: left;
+
+  margin: 0;">Interfaces y buses de comunicacion</h1>
+  <p style="position: absolute; top: 4940px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">Un bus es un conjunto de lineas fisicas (cables o pistas del circuito) que transportan señales electricas. Hay varios tipos:
+  <br><br><strong>-Bus de datos: </strong>Transfiere los datos reales entre el procesador, la memoria y el almacenamiento.<br><br><strong>-Bus de direcciones:</strong> Transporta la direccion de memoria donde deben ir o buscarse los datos.
+<br><br><strong>-Bus de control: </strong>Lleva señales de control como lecturas, escrituras, interrupciones, etc.
+<br><br> Tambien existen buses o interfaces como:<br><br><strong>-SATA</strong>(para HDD y SSD)<strong>-NVMe </strong>sobre <strong>PCle</strong>(SSD de alta velocidad)
+<br><br><strong>-USB</strong>(almacenamiento externo)<br><br><strong>-IDE</strong>(obsoleto, usado en equipos antiguos) <br><br>Estas interfaces determinan la velocidad de transferencia, la compatibilidad y el tipo de conexion.
+<br><br>
+</p>
+
+<img src="images/demo/bus.png"style="position: absolute; top: 5250px; left: 30px;" alt="" />
+
+<p style="position: absolute; top: 5460px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">La importancia de una buena estructura de almacenamiento radica en que permite un acceso rapido a los datos, lo cual mejora la eficiencia del sistema y la experiencia del usuario. Ademas, reduce el riesgo de perdida o corrupcion de archivos, 
+  lo que protege la informacion valiosa. Una estructura bien organizada tambien ofrece mayor seguridad, mediante el uso de particiones o cifrado, y contribuye a un mejor rendimiento general del sistema. Finalmente, promueve una mayor vida util de los dispositivos de almacenamiento,
+   gracias a buenas practicas de lectura y escritura que evitan un desgaste innecesario del hardware.</p>
+  <h1 style="position: absolute; top: 5600px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  color: #FDC609;
+  margin: 0;">Estructura a nivel Software</h1>
+  <p style="position: absolute; top: 5640px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">La estructura a nivel de software se refiere a la organizacion logica de los componentes del software dentro de un sistema informatico. Esta estructura determina como se disena, se comunica y se ejecuta el software sobre el hardware,
+   y afecta directamente la eficiencia, escalabilidad y mantenimiento del sistema.
+  <br><br><strong>Capas principales</strong><br><br><strong>Firmware</strong><br>Es el software basico que esta almacenado directamente en el hardware (como una ROM). Controla funciones esenciales del dispositivo, como el encendido, 
+  la comunicacion entre componentes y la inicializacion del sistema. Ejemplo: BIOS o UEFI.<br><br><strong>Sistema operativo (SO)</strong><br>Es el software base que administra los recursos de hardware y proporciona servicios a otros programas. Gestiona la memoria, los procesos, 
+  los dispositivos de entrada/salida y el almacenamiento. Ejemplos: Windows, Linux, macOS.<br><br><strong>Drivers o controladores</strong><br>Son programas que permiten al sistema operativo comunicarse con el hardware especifico, como impresoras, tarjetas graficas, o discos duros. Sin drivers, el SO 
+  no puede interactuar correctamente con los dispositivos.<br><br><strong>Middleware</strong><br>Es una capa intermedia entre el sistema operativo y las aplicaciones, que facilita la comunicacion entre distintos programas o componentes. Ejemplos: servidores de aplicaciones, motores de bases de datos, APIs.
+  <br><br><strong>Aplicaciones de usuario</strong><br>Son los programas que utiliza el usuario final: navegadores, editores de texto, videojuegos, sistemas contables, etc. Estas aplicaciones se apoyan en todas las capas anteriores para funcionar correctamente.
+<br><br>
+  </p>
+<img src="images/demo/software.png"style="position: absolute; top: 6070px; left: 30px;" alt="" />
+ <h1 style="position: absolute; top: 6320px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  
+  margin: 0;">Importancia de una buena estructura de software</h1>
+
+  <p style="position: absolute; top: 6360px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">Una estructura bien definida permite que el software:<br><br>Sea <strong>modular</strong>, es decir,  que pueda ser dividido en partes independientes y reutilizables.
+  <br><br>Sea <strong>mantenible</strong>, facilitando las  actualizaciones y correccion de errores.
+<br><br>Permita <strong>escalabilidad, </strong>adaptandose al crecimiento del sistema o la carga de usuarios.<br><br>Tenga <strong>mayor rendimiento, </strong>
+al optimizar la comunicacion entre software y hardware.<br><br>Garantice <strong>seguridad y estabilidad, </strong>reduciendo fallos y vulnerabilidades. <br><br>
+La estructura a nivel de software es fundamental para el funcionamiento eficiente de una computadora, ya que organiza de forma logica los distintos componentes que interactuan con el hardware. Desde el firmware que controla funciones basicas hasta las aplicaciones que usa el usuario final,
+ cada capa cumple un rol especifico en el sistema. Una buena organizacion del software permite mayor rendimiento, facilita el mantenimiento, mejora la seguridad y asegura que el sistema sea escalable y adaptable a nuevas necesidades.
+ Por eso, entender esta estructura es clave tanto para el desarrollo como para la optimizacion de sistemas informaticos. <br><br>
+</p>
+    </div></div></div></body></html>

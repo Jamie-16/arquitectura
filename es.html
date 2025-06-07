@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ADM</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+</head>
+<body id="top">
+<div class="wrapper">
+  <div id="header">
+    <div id="logo">
+      <h1><a href="index.html">ADM</a></h1>
+      <p>Arquitectura de maquinas - Contenido y material del curso</p>
+    </div>
+    <div id="topnav">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li class="active"><a href="conceptos.html">Conceptos</a></li>
+    <li><a href="estructuras.html">Estructuras</a></li>
+    <li><a href="practicas.html">Practicas</a></li>
+ 
+  </ul>
+
+  
+  <h1 style="position: absolute; top: 170px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">Por que es importante?</h1>
+<img src="images/demo/esalida.png"style="position: absolute; top: 230px; left: 30px;" alt="" />
+<p style="position: absolute; top: 600px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">
+  La E/S es critica porque sin ella una computadora no podria interactuar con el usuario ni con otros sistemas. No podriamos introducir datos, ver resultados, guardar informacion ni enviar comandos. Ademas, la eficiencia del sistema de E/S determina la rapidez con la que se pueden realizar tareas como leer archivos, reproducir video o enviar datos por red. <br><br>
+
+En resumen, las entradas y salidas permiten que la computadora no sea solo un procesador aislado, sino una herramienta util, conectada y capaz de interactuar en tiempo real con el entorno fisico y digital. Un buen diseño de E/S mejora la experiencia del usuario, la velocidad del sistema y la posibilidad de integrarse con nuevas tecnologias. <br><br>
+</p>
+  <h1 style="position: absolute; top: 760px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">Ciclo basico de Entrada Y salida</h1>
+  <p style="position: absolute; top: 799px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;"><strong>1. Inicio de solicitud de E/S</strong><br><br>El CPU o un programa solicita datos desde un dispositivo(por ejemplo, un teclado) o quiere enviar datos a uno (como una impresora)
+  <br><br><strong>2.Revision del estado del dispositivo</strong><br><br>Se consulta si el dispositivo esta listo (por ejemplo, si una impresora esta encendida y sin papel trabado).
+<br><br><strong>3.Transferencia de datos</strong> <br><br> Dependiendo del metodo (E/S programada, interrupciones o DMA), los datos se transfieren entre el dispositivo y la memoria o CPU.
+<br><br><strong>4.Confirmacion de la operacion</strong> <br><br>El dispositivo confirma que los datos fueron enviados o recibidos correctamente. <br><br>
+<strong>5.Notificacion al sistema</strong><br><br> Se avisa al sistema operativo o al programa que la operacion de E/S termino (puede ser por una señal de interrupcion).
+</p>
+  <h1 style="position: absolute; top: 1170px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">E/S en Computadoras Personales vs. Sistemas Embebidos</h1>
+<table style="position: absolute; top: 1230px; left: 30px;" border="1px">
+    <tr>
+        <td>Caracteristica</td>
+        <td>Computadora personal</td>
+        <td>Sistema Embebido</td>
+    </tr>
+    <tr>
+        <td>Dispositivos comunes</td>
+        <td>Teclado, raton, pantalla, disco, red</td>
+        <td>Sensores, motores, LEDs, botones</td>
+
+    </tr>
+    <tr>
+        <td>Sistema operativo</td>
+        <td>Completo (Windows, Linux, etc.)</td>
+        <td>Ligero o sin sistema operativo (bare-metal, RTOS)</td>
+        
+    </tr>
+   <tr>
+    <td>
+        Velocidad de E/S
+    </td>
+    <td>Alta, con controladores complejos</td>
+    <td>E/S optimizada y directa</td>
+   </tr> 
+   <tr>
+    <td>Flexibilidad</td>
+    <td>Puede manejar muchos tipos de dispositivos</td>
+    <td>Especifico para una tarea</td>
+   </tr>
+
+   <tr>
+    <td>Consumo de energia</td>
+    <td>Menor prioridad</td>
+    <td>Alta prioridad (especialmente en IoT)</td>
+   </tr>
+   <tr>
+    <td>Metodo de control</td>
+    <td>Interrupciones, DMA, drivers avanzados</td>
+    <td>E/S directa o con interrupciones simples</td>
+   </tr>
+<tr>
+    <td>Ejemplo</td>
+    <td>Leer un archivo desde USB</td>
+    <td>	Leer temperatura desde un sensor</td>
+   </tr>
+ </table>
+<p style="position: absolute; top: 1470px; left: 30px;
+  width: 1000px;
+  text-align: left;
+  margin: 0;">En una computadora personal la E/S est disenada para ser versatil y multitarea, capaz de manejar diferentes tipos de perifericos a gran velocidad.
+   En cambio, en un sistema embebido la E/S esta especializada, optimizada y simplificada, ya que se enfoca en tareas concretas, como controlar sensores o actuar sobre un entorno fisico.<br><br></p>
+
+    </div></div></div></body></html>
